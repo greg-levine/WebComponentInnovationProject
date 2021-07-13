@@ -1,13 +1,9 @@
-import { html, css, LitElement } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
+import { html, LitElement } from 'lit';
+import { customElement } from 'lit/decorators.js';
 import * as d3 from 'd3';
 
 @customElement('pie-chart')
 export class PieChartElement extends LitElement {
-  static styles = css`p { color: blue }`;
-
-  @property()
-  name = 'Somebody';
 
   firstUpdated() {
     this.createChart()
