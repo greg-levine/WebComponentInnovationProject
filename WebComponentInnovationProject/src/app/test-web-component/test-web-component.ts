@@ -3,7 +3,7 @@ import { customElement, property } from 'lit/decorators.js';
 import * as d3 from 'd3';
 
 @customElement('pie-chart')
-export class SimpleGreeting extends LitElement {
+export class PieChartElement extends LitElement {
   static styles = css`p { color: blue }`;
 
   @property()
